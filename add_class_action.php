@@ -10,7 +10,7 @@ if ($count > 0){
 echo "true";
 }else{
 
-mysqli_query($conn,"insert into teacher_class (teacher_id,subject_id,class_id,thumbnails,school_year) values('$session_id','$subject_id','$class_id','admin/uploads/thumbnails.jpg','$school_year')")or die(mysqli_error());
+mysqli_query($conn,"insert into teacher_class (teacher_id,subject_id,class_id,thumbnails,school_year) values('$session_id','$subject_id','$class_id','admin/uploads/classroomNew.jpeg','$school_year')")or die(mysqli_error());
 
 $teacher_class = mysqli_query($conn,"select * from teacher_class order by teacher_class_id DESC")or die(mysqli_error());
 $teacher_row = mysqli_fetch_array($teacher_class);
